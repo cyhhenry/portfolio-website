@@ -11,12 +11,10 @@ Secondary Color
 :root {
   --main-bg-color:#FFFAF0;
   --primary-color:#694c13;
-  --secondary-color: ;
   --link-color:#a82a07;
   --max-width: 700px;
   --main-padding: 20px;
   --minor-padding: 10px;
-  --main-header-color:
 }
 
 body {
@@ -69,13 +67,13 @@ a:active {
 
 .navigation-list_item, .navigation-list_item:visited {
   color: var(--link-color);
-  text-size-adjust: 24px
+  text-size-adjust: none;
 }
 
 .navigation-list_item--active, .navigation-list_item--active:visited {
   text-decoration: none;
   color: #0d5c28;
-  text-size-adjust: 24px
+  text-size-adjust: none;
 }
 
 .profile {
@@ -104,11 +102,6 @@ button {
     /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
       }
-
-.button_secondary {
-  background-color: #E2E8CE;
-  color: #FF7F11;
-}
 
 .page-header {
   display: flex;
@@ -169,7 +162,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 
 .about_me {
-  flex-flow: column 1;
+  flex-flow: row;
   width: 100%;
   margin: auto;
   text-align: center;
@@ -178,7 +171,6 @@ button:hover, button:focus, .button:hover, .button:focus {
 .about_me-header {
   font-family: inherit;
   text-align: center;
-  margin-left: 100px;
   width: 100%;
   display: block;
   color: #672ec9;
@@ -197,7 +189,7 @@ button:hover, button:focus, .button:hover, .button:focus {
   padding-bottom: var(--minor-padding);
 }
 .about_me-skills {
-  flex: block;
+  flex: 1;
   width: 300px;
   margin: 30px auto;
   text-align: center;
@@ -236,7 +228,6 @@ text-decoration: none;
        grid-template-columns: 1fr 1fr 1fr;
        grid-gap: 20px;
        margin: 0;
-
   }
 
   .grid__item {

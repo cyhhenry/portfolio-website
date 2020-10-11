@@ -15,6 +15,19 @@ Secondary Color
 
 */
 
+header{
+  margin: 5px;
+  box-shadow: 0px 1px 1px 0px black;
+  position: fixed;
+  top: 0;
+  width: 99.5%;
+
+}
+
+section{
+  margin-top: 100px;  
+}
+
 body {
   background-color: #FFFAF0;
   color: #694c13;
@@ -26,17 +39,14 @@ body {
 
 h1 {
   font-size: 22px;
-  font-weight: undefined;
   }
 
 h2 {
   font-size: 20px;
-  font-weight: undefined;
     }
 
 h3 {
     font-size: 18px;
-    font-weight: undefined;
     }
 
 a {
@@ -60,7 +70,8 @@ a:active {
 
 .page-header__item_logo {
   min-width: 50px;
-  max-width: 120px;
+  max-width: 85px;
+  margin-top: 6px;
 }
 
 .navigation-list_item {
@@ -97,7 +108,8 @@ a:active {
 .profile__pic {
   float: left;
   width: 250px;
-  margin-right: 40px;
+  margin: 80px;
+  margin-right: 100px;
   border-radius: 50%;
 }
 
@@ -114,11 +126,6 @@ button {
     /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
       }
-
-.button_secondary {
-  background-color: #E2E8CE;
-  color: #FF7F11;
-}
 
 .page-header {
   display: -webkit-box;
@@ -138,6 +145,7 @@ button {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 200px;
           flex: 0 1 200px;
+          float: right;
 }
 
 .page-header__item:last-child {
@@ -160,19 +168,14 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 
 .button {
-  /* overwrites browser defaults */
-  /* resets the border */
   border: none;
   display: inline-block;
-  /* takes the font from the outer container */
   font-family: inherit;
-  /* style button */
   background-color: #672ec9;
   color: white;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  /* width of the border, type, color */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.5s opacity;
   -o-transition: 0.5s opacity;
@@ -222,29 +225,45 @@ button {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+.home-header {
+  font-family: inherit;
+  text-align: center;
+  width: 100%;
+  display: inline;
+  color: #672ec9;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+}
+
 .about_me-header {
   font-family: inherit;
   text-align: center;
-  margin-left: 100px;
   width: 100%;
-  display: block;
   color: #672ec9;
-  max-width: 700px;
   -ms-flex-negative: 1;
       flex-shrink: 1;
+}
+.home-item {
+  display: block;
+  max-width: 700px;
+  width: 100%;
+  margin: inherit;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  padding-left: 200px;
 }
 .about_me-item {
   display: block;
   max-width: 700px;
   width: 100%;
   margin: auto;
-  text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   list-style: none;
-  padding-left: 0px;
-  padding-bottom: 10px;
 }
 .about_me-skills {
   -webkit-box-flex: block;
@@ -260,6 +279,7 @@ button {
   max-width: 420px;
   margin: auto;
   width: 420px;
+  text-align:center;
 }
 
 a {
@@ -394,4 +414,64 @@ text-decoration: none;
 
 #path1216 {
   animation: 8s color-change infinite alternate-reverse linear;
+}
+
+.contact-item{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align:center;
+}
+
+input[type=text], textarea {
+  width: 90%;
+  padding: 12px;
+  border:1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.standard-label{
+  float: left;
+  width:20%;
+  margin-top:6px;
+}
+
+.standard-label-input{
+  float: left;
+  width:80%;
+  margin-top:6px;
+}
+
+.row:after{
+  content:"";
+  display:table;
+  clear:both;
+}
+
+
+input[type=submit]:hover {
+  background-color: #672ec9;
+}
+
+input[type=submit]{
+  background-color: #672ec9;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+label{
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+@media screen and (max-width: 600px) {
+  .standard-label, .standard-label-input, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
 }
