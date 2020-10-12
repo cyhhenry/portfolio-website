@@ -21,7 +21,8 @@ header{
   position: fixed;
   top: 0;
   width: 99.5%;
-
+  font-size: 18px;
+  background-color:#faf2e2;
 }
 
 section{
@@ -140,11 +141,12 @@ button {
 }
 
 .page-header__item {
+  float: right;
   display: inline-block;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 200px;
           flex: 0 1 200px;
-          float: right;
+  
 }
 
 .page-header__item:last-child {
