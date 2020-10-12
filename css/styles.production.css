@@ -108,8 +108,7 @@ a:active {
 .profile__pic {
   float: left;
   width: 250px;
-  margin: 80px;
-  margin-right: 100px;
+  margin: 20px 80px 60px 80px;
   border-radius: 50%;
 }
 
@@ -254,6 +253,7 @@ button {
           justify-content: center;
   list-style: none;
   padding-left: 200px;
+  margin-top: 30px;
 }
 .about_me-item {
   display: block;
@@ -309,12 +309,12 @@ text-decoration: none;
        -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
        grid-template-columns: 1fr 1fr 1fr;
        grid-gap: 20px;
-       margin: 0;
+       margin: 0px 20px 0px 20px;
 
   }
 
   .grid__item {
-    background-color: lightgray;
+    background-color:#e1d8d8;
     width: auto;
     min-height: auto;
     margin: 0;
@@ -329,87 +329,8 @@ text-decoration: none;
   }
 }
 
-@media all and (max-width: 500px) {
-  .grid {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-  }
-}
-@media all and (min-width: 500px) and (max-width: 750px) {
-  .grid {
-    -ms-grid-columns: 1fr 20px 1fr;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media all and (max-width: 750px) {
-  .grid {
-    grid-gap: 10px;
-  }
-  .grid__item:last-child {
-    grid-column: auto / auto;
-    grid-row: auto / auto;
-  }
-  h1 {
-    font-size: 22px;
-  }
-}
-
 #svg10 {
   max-width: 700px;
-}
-
-@-webkit-keyframes color-change {
-  0% {
-    fill: #ff0000;
-  }
-  14% {
-    fill: #ffa500;
-  }
-  28% {
-    fill: #ffff00;
-  }
-  42% {
-    fill: #008000;
-  }
-  56% {
-    fill: #0000ff;
-  }
-  70% {
-    fill: #4b0082;
-  }
-  84% {
-    fill: #3382ee;
-  }
-  100% {
-    fill: #ffffff;
-  }
-}
-
-@keyframes color-change {
-  0% {
-    fill: #ff0000;
-  }
-  14% {
-    fill: #ffa500;
-  }
-  28% {
-    fill: #ffff00;
-  }
-  42% {
-    fill: #008000;
-  }
-  56% {
-    fill: #0000ff;
-  }
-  70% {
-    fill: #4b0082;
-  }
-  84% {
-    fill: #3382ee;
-  }
-  100% {
-    fill: #ffffff;
-  }
 }
 
 #path1216 {
@@ -469,9 +390,40 @@ label{
   display: inline-block;
 }
 
-@media screen and (max-width: 600px) {
+@media all and (max-width: 600px) {
   .standard-label, .standard-label-input, input[type=submit] {
     width: 100%;
     margin-top: 0;
+  }
+}
+
+@media all and (max-width: 420px) {  
+  .about_me-item {
+    padding: 20px;
+  }
+  .grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+@media all and (min-width: 420px) and (max-width: 750px) {
+  .about_me-item {
+    padding: 20px;
+  }
+  .grid {
+    -ms-grid-columns: 1fr 20px 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 10px;
+  }
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
   }
 }

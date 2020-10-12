@@ -175,7 +175,6 @@ button:hover, button:focus, .button:hover, .button:focus {
   display: block;
   color: #672ec9;
   max-width: var(--max-width);
-  flex-shrink: 1;
 }
 .about_me-item {
   display: block;
